@@ -4,6 +4,8 @@
   height: 200px;
   margin: 5px;
   display: inline-block;
+  box-shadow: 0 2px 2px #000;
+  border-radius: 20px;
 
 }
 
@@ -21,4 +23,9 @@
 
 .card-item-temp{
   margin: 25px;
+  display: inherit;
+}
+.card-item-temp-box{
+  display: inline;
+  align-content: space-between;
 }

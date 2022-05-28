@@ -3,6 +3,7 @@ class="home-input"
 type="text"
 placeholder="Ingrese ciudad"
 [(ngModel)]="nombreCiudad"
+(keyup.enter)="getClimaSemana()"
 >
 <button
 class="home-button"

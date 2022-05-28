@@ -4,10 +4,9 @@
     <div style="display: flex;">
       <img width="100px" height="100px" class="card-img" [src]="dataClimaDia.iconURL" alt="">
     </div>
-    <div style=" display: inline; align-content: space-between;">
-      <span style="display: inherit;" class="card-item-temp"><b>Min:{{dataClimaDia.min_temp.c}}</b></span>
-      <span style="display: inherit;" class="card-item-temp"><b>Min:{{dataClimaDia.max_temp.c}}</b></span>
-
+    <div class="card-item-temp-box">
+      <span  class="card-item-temp"><b>Min:{{dataClimaDia.min_temp.c}}</b></span>
+      <span  class="card-item-temp"><b>Min:{{dataClimaDia.max_temp.c}}</b></span>
     </div>
 
 </div>
