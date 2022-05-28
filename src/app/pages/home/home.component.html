@@ -1,0 +1,22 @@
+<input
+class="home-input"
+type="text"
+placeholder="Ingrese ciudad"
+[(ngModel)]="nombreCiudad"
+>
+<button
+class="home-button"
+(click)="getUbicacionActual()"
+>Usar mi ubicacion</button>
+<button
+class="home-button"
+(click)="getClimaSemana()"
+>Buscar</button>
+
+
+<h2><b>Region</b>: {{region}}</h2>
+
+<div style=" display: inline;" *ngFor="let dia of dataClimaSemana;">
+<app-card style="display: inherit;" [dataClimaDia]="dia"></app-card>
+</div>
+
